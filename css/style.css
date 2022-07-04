@@ -475,6 +475,8 @@ main {
 
 .reviews form textarea {
   padding-top: 27px;
+  max-height: 400px;
+  max-width: 984px;
   height: 292px;
   margin: 16px 0;
 }
