@@ -1,0 +1,860 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  width: 1184px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  position: relative;
+  min-height: 900px;
+  height: 100vh;
+  background: url("../img/bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-color: #0d2f85;
+}
+
+nav#mobile-version {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  padding: 32px 0;
+  color: white;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .contacts,
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav .phone {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+nav .line {
+  margin: 0 20px;
+  height: 32px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.to-main-site-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 261px;
+  height: 52px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  text-decoration: none;
+  color: white;
+  margin-left: 64px;
+  transition: background 0.4s, color 0.4s;
+}
+
+.to-main-site-btn:hover {
+  background: #fff;
+  color: #333;
+}
+
+.company-title {
+  margin-top: 75px;
+}
+
+.company-title .title {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 100px;
+}
+
+.company-title .btns {
+  display: flex;
+  margin-top: 58px;
+}
+
+.company-title .btns > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78px;
+  width: 384px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  background: #f95504;
+  transition: opacity 0.2s;
+}
+
+.company-title .btns > *:nth-child(1) {
+  margin-right: 16px;
+}
+
+.company-title .btns > *:hover {
+  opacity: 0.8;
+}
+
+.items {
+  margin-top: 222px;
+}
+
+.items .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items .item {
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+}
+
+.item span {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  margin-left: 38px;
+}
+
+main {
+  background: #ececec;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.content .text {
+  margin-left: 114px;
+}
+
+.content .title,
+.content .title span {
+  position: relative;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 72px;
+  color: #393939;
+  z-index: 2;
+}
+
+.content .title span {
+  color: white;
+}
+
+.content .title .rect,
+.reviews .title .rect {
+  position: absolute;
+  background: #f95504;
+  z-index: 1;
+}
+
+.content .title .r-1 {
+  width: 130px;
+  height: 52px;
+  right: 39px;
+  top: 13px;
+}
+
+.content .title .r-2 {
+  width: 142px;
+  height: 52px;
+  left: 0;
+  bottom: 7px;
+}
+
+.content .title .r-3 {
+  width: 278px;
+  height: 50px;
+  right: 98px;
+  bottom: 3px;
+}
+
+.content .desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #393939;
+}
+
+.content .d-marg {
+  margin-top: 40px;
+  margin-bottom: 28px;
+}
+
+.content:nth-child(2) {
+  padding-bottom: 120px;
+}
+
+.content:nth-child(2) .text {
+  margin: 0;
+  margin-right: 108px;
+}
+
+.content ul {
+  margin-top: 40px;
+}
+
+.content ul > li {
+  position: relative;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #393939;
+  margin-bottom: 28px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.content ul > li::before {
+  display: block;
+  content: "";
+  position: relative;
+  min-height: 18px;
+  min-width: 18px;
+  background: #f95504;
+  margin-right: 32px;
+}
+
+.content ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.vacancies {
+  padding: 52px 0;
+  background: url("../img/bg-2.png");
+  background-color: #0d2f85;
+  background-size: cover;
+  background-position: center center;
+}
+
+.vacancies .wrapper {
+  overflow: hidden;
+}
+
+.vacancies .wrapper > .title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 72px;
+  color: #fff;
+}
+
+.vacancies-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  left: 0;
+  transition: left 0.5s;
+  /* overflow: hidden; */
+}
+
+.vacancie {
+  /* position: absolute; */
+  position: relative;
+  min-width: 384px;
+  max-width: 384px;
+  min-height: 384px;
+  background: #fff;
+  border: 1px solid #ecedf0;
+  border-radius: 12px;
+  padding: 16px;
+  margin-right: 16px;
+}
+
+.vacancie .title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 47px;
+  color: #0d2f85;
+}
+
+.vacancie .salary {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #f95504;
+  margin-top: 2px;
+  margin-bottom: 24px;
+}
+
+.vacancie .desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #393939;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.not-active {
+  cursor: auto;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.arrows > * {
+  width: 128px;
+  height: 64px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrows .left img {
+  transform: scale(-1, 1);
+}
+
+.reviews {
+  padding: 120px 0;
+  background: #ececec;
+}
+
+.reviews .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews .title,
+.reviews .title span {
+  /* text-align: center; */
+  display: inline;
+  position: relative;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 72px;
+  color: #393939;
+  z-index: 2;
+}
+
+.reviews .title span {
+  color: #fff;
+}
+
+.r-4 {
+  width: 177px;
+  height: 49px;
+  right: -3px;
+  top: 21px;
+}
+
+.reviews-container {
+  max-width: 984px;
+  background: #fff;
+  padding: 24px;
+  margin-top: 64px;
+}
+
+.review {
+  display: flex;
+  align-items: flex-start;
+}
+
+.review:not(.review:last-child) {
+  margin-bottom: 40px;
+}
+
+.review .info {
+  margin-left: 24px;
+}
+
+.review .name,
+.review .post,
+.review .text-review {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.review .name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1a1a1a;
+}
+
+.review .post {
+  line-height: 21px;
+  color: #4d4d4d;
+  margin: 4px 0 16px 0;
+}
+
+.review .text-review {
+  line-height: 24px;
+  color: #1a1a1a;
+}
+
+.reviews form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 984px;
+  margin-top: 40px;
+}
+
+.reviews form input,
+.reviews form textarea {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  height: 78px;
+  color: #808080;
+  padding-left: 27px;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  outline: none;
+}
+
+.reviews form textarea {
+  padding-top: 27px;
+  height: 292px;
+  margin: 16px 0;
+}
+
+.reviews form button {
+  height: 78px;
+  background: #f95504;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  transition: opacity 0.2s;
+}
+
+.reviews form button:hover {
+  opacity: 0.8;
+}
+
+.send-text {
+  position: absolute;
+  bottom: -30px;
+  font-weight: 500;
+  color: #393939;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  white-space: nowrap;
+}
+
+footer {
+  padding-top: 53px;
+  background: url("../img/bg-3.png");
+  background-color: #0d2f85;
+  background-size: cover;
+  background-position: center center;
+}
+
+footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+footer h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 72px;
+}
+
+footer p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 16px 0;
+}
+
+footer .phone {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 72px;
+}
+
+footer .mail {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 72px;
+  margin-bottom: 53px;
+}
+
+.bottom-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 32px 0;
+}
+
+.bottom-footer .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrap {
+  display: none;
+}
+
+.content .btn {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 16px;
+  }
+  header {
+    min-height: auto;
+    height: auto;
+  }
+  nav#pc-version {
+    display: none;
+  }
+  nav#mobile-version {
+    display: block;
+    border: none;
+    padding: 24px 0;
+  }
+  nav .wrapper {
+    display: block;
+    padding: 0;
+  }
+  nav img {
+    width: 144px;
+  }
+  nav .contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    width: 100%;
+    padding: 18px 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  nav .mail {
+    font-size: 14px;
+  }
+  nav .phone {
+    font-size: 16px;
+  }
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+  }
+  .to-main-site-btn {
+    margin-left: 0;
+    width: 163px;
+    height: 31px;
+    font-size: 12px;
+  }
+  .company-title {
+    margin-top: 0;
+  }
+  .company-title .title {
+    font-size: 40px;
+    text-align: center;
+    line-height: 48px;
+  }
+  .company-title .btns {
+    margin-top: 24px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .company-title .btns > * {
+    width: 100%;
+  }
+  .company-title .btns > :nth-child(1) {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .items {
+    margin-top: 35px;
+  }
+  .items .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .item img {
+    width: 74.5px;
+  }
+
+  .item span {
+    width: 194px;
+    margin-left: 35px;
+  }
+  .item:last-child {
+    margin-bottom: 26px;
+  }
+  .wrap {
+    display: block;
+  }
+  .content {
+    padding-top: 64px;
+  }
+  .content .title {
+    width: max-content;
+  }
+  .content .title,
+  .content .title span {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .content img {
+    display: none;
+  }
+  .content .text {
+    margin: 0;
+  }
+  .content .title .r-1 {
+    width: 95px;
+    height: 40px;
+    top: 10px;
+    right: -1px;
+  }
+  .content .title .r-2 {
+    width: 103px;
+    height: 40px;
+    left: -2px;
+    bottom: 6px;
+  }
+  .content .desc {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .content .d-marg {
+    margin: 32px 0 28px 0;
+  }
+  .content:nth-child(2) {
+    padding-bottom: 64px;
+  }
+  .content:nth-child(2) .text {
+    margin: 0;
+    margin-right: 0;
+  }
+  .content .btn {
+    display: flex;
+    height: 67px;
+    width: 100%;
+    background: #f95504;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 2px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    margin-top: 28px;
+  }
+  .content .btn:hover {
+    opacity: 0.8;
+  }
+  .content .title .r-3 {
+    right: 36px;
+    width: 198px;
+    height: 36px;
+  }
+  .content ul > li {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+  }
+  .vacancies .wrapper > .title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+  }
+  .vacancie {
+    min-width: auto;
+    min-height: auto;
+    min-width: 100%;
+  }
+  .vacancie .salary {
+    margin: 2px 0 16px 0;
+  }
+  .vacancie .desc {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .arrows > * {
+    width: 164px;
+  }
+  .reviews {
+    padding-top: 64px;
+    background: #fff;
+  }
+  .reviews .title,
+  .reviews .title span {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .r-4 {
+    width: 126px;
+    height: 34px;
+    top: 18px;
+  }
+
+  .reviews-container {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    padding: 16px;
+    margin-top: 40px;
+  }
+  .review {
+    position: relative;
+  }
+  .review img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .review .info {
+    margin-left: 0;
+  }
+  .review .info .name {
+    display: flex;
+    align-items: center;
+    margin-left: 135px;
+    font-size: 23px;
+    min-height: 84px;
+  }
+  .review .info .post {
+    margin: 8px 0 21px 135px;
+  }
+  .review .info .text-review {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .reviews form {
+    width: 100%;
+  }
+  .reviews form input {
+    align-items: flex-start;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  footer p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  footer .phone {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  footer .mail {
+    margin-top: 12px;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 34px;
+  }
+  footer img {
+    width: 144px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  footer p {
+    font-size: 16px;
+    max-width: 280px;
+  }
+}
