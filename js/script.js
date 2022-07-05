@@ -60,7 +60,6 @@ arrows.addEventListener("click", (e) => {
   const left = getLeftPositionVacanciesContainer();
   const cardWidth = document.querySelector('.vacancie').clientWidth
   const arrow = e.target
-  console.log(cardWidth)
   if (arrow.classList.contains("left") || arrow.parentElement === arrowLeft) {
     vacancies.style.left = left + cardWidth + 16 + 2 + "px";
     leftPos = left + cardWidth + 16 + 2
