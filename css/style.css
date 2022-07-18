@@ -25,7 +25,7 @@ ul {
 
 header {
   position: relative;
-  min-height: 900px;
+  min-height: 800px;
   height: 100vh;
   background: url("../img/bg.png");
   background-size: cover;
@@ -130,7 +130,7 @@ nav .line {
 }
 
 .items {
-  margin-top: 222px;
+  margin-top: 140px;
 }
 
 .items .wrapper {
